@@ -1,4 +1,4 @@
-package com.ud.testcontainers.post;
+package com.ud.testcontainers.integrationtests;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
