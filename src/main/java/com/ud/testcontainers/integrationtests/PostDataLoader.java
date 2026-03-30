@@ -1,4 +1,4 @@
-package com.ud.testcontainers.post;
+package com.ud.testcontainers.integrationtests;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
