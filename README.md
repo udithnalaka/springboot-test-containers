@@ -12,8 +12,9 @@ This application is mainly developed for Integration testing the application fun
 * Test Containers
 * Docker compose
 * PostgreSQL
+* Wiremock
 
-### Integration Testing
+### Integration Testing (Controller to database layer)
 
 1. Database layer: Repository class
 
@@ -40,6 +41,17 @@ This application is mainly developed for Integration testing the application fun
     * @Rollback - Undo the transaction after test completes. Keeps the database clean and tests reliable. 
       This prevents one test from affecting another.
 
-### Test Results
+#### Test Results
 
   ![img.png](img.png)
+
+### Wiremock Testing
+Controller to Service by stubbing the External service (Github api)
+
+    GithubControllerTest.java
+
+   using the below annotations
+   * @Testcontainers
+   * @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+   * @Container
+   * @DynamicPropertySource
