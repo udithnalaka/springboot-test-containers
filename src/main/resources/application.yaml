@@ -4,3 +4,6 @@ spring:
   sql:
     init:
       mode: always
+  app:
+    github:
+      base-url: https://api.github.com
